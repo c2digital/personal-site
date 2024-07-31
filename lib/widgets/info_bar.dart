@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 Widget infoBar(BuildContext context) {
   return Container(
     padding: const EdgeInsets.all(50),
-    color: const Color.fromARGB(120, 0, 0, 0),
+    color: const Color.fromARGB(180, 0, 0, 0),
     child: Column(
       children: [
         _nameBar(context),

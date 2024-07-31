@@ -9,7 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_sticky_header: ^0.6.5
   flutter_sticky_widgets: ^0.0.3
+  lorem_ipsum: ^0.0.3
   shimmer: ^3.0.0
 
 dev_dependencies:
