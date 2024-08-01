@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:personal_site/background_image.dart';
 import 'package:personal_site/opacity_filter.dart';
-import 'package:personal_site/scrolling_body.dart';
+import 'package:personal_site/splitting_body.dart';
 
 void main() {
   runApp(const MainApp());
@@ -18,7 +18,7 @@ class MainApp extends StatelessWidget {
             child: Stack(children: [
           BackgroundImage(),
           OpacityFilter(),
-          ScrollingBody(),
+          SplittingBody(),
         ])),
       ),
     );

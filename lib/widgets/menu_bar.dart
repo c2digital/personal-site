@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'dart:js' as js;
 
-Widget topBar() {
+Widget topBar({
+  required Function pageSelectAction,
+}) {
   TextStyle headerText = TextStyle(
     color: Colors.grey.shade400,
     fontSize: 16,
@@ -10,13 +13,27 @@ Widget topBar() {
   return Row(
     children: [
       Expanded(child: Container()),
-      Text('ABOUT ME', style: headerText),
+      GestureDetector(
+        onTap: () => pageSelectAction(0),
+        child:  Text('ABOUT ME', style: headerText),
+      ),     
       const SizedBox(width: 50),
-      Text('SKILLS', style: headerText),
+      GestureDetector(
+        onTap: () => pageSelectAction(1),
+        child:  Text('SKILLS', style: headerText),
+      ),    
       const SizedBox(width: 50),
-      Text('GITHUB', style: headerText),
+      GestureDetector(
+        onTap: () {
+          js.context.callMethod('open', ['https://github.com/c2digital']);
+        },
+        child:  Text('GITHUB', style: headerText),
+      ),  
       const SizedBox(width: 50),
-      Text('CONTACT', style: headerText),
+      GestureDetector(
+        onTap: () => pageSelectAction(2),
+        child:  Text('CONTACT', style: headerText),
+      ),    
     ],
   );
 }

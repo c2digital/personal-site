@@ -12,7 +12,7 @@ Widget bottomBar() {
           color: Colors.white,
         ),
         Shimmer.fromColors(
-          period: Duration(milliseconds: 1500),
+          period: const Duration(milliseconds: 1500),
           baseColor: Colors.grey.shade700,
           highlightColor: Colors.grey.shade100,
           enabled: true,

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:lorem_ipsum/lorem_ipsum.dart';
-import 'dart:math' as math;
 
 import 'package:personal_site/styles/text.dart';
 
@@ -24,19 +23,19 @@ Widget skills() {
                   style: bodyTextStyle,
                   textAlign: TextAlign.end,
                 ),
-                SizedBox(height: 50),
+                const SizedBox(height: 50),
                 Text(
                   loremIpsum(words: 30),
                   style: bodyTextStyle,
                   textAlign: TextAlign.end,
                 ),
-                SizedBox(height: 50),
+                const SizedBox(height: 50),
                 Text(
                   loremIpsum(words: 10),
                   style: bodyTextStyle,
                   textAlign: TextAlign.end,
                 ),
-                SizedBox(height: 60),
+                const SizedBox(height: 60),
                 Text(
                   loremIpsum(words: 30),
                   style: bodyTextStyle,
