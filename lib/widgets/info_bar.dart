@@ -20,7 +20,7 @@ Widget _nameBar(BuildContext context) {
     final TextStyle nameText = TextStyle(
       color: Colors.white,
       height: 0.9,
-      fontSize: 8 * unitHeightValue,
+      fontSize: 6 * unitHeightValue,
       fontWeight: FontWeight.bold,
       shadows: [
         Shadow(

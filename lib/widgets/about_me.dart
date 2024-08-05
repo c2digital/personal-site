@@ -10,6 +10,7 @@ Widget aboutMe() {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Text('About Me', style: titleTextStyle),
+        const SizedBox(height: 20),
         Row(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,

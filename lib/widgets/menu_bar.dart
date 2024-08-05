@@ -21,6 +21,11 @@ Widget topBar({
       GestureDetector(
         onTap: () => pageSelectAction(1),
         child:  Text('SKILLS', style: headerText),
+      ),   
+      const SizedBox(width: 50),
+      GestureDetector(
+        onTap: () => pageSelectAction(2),
+        child:  Text('PROJECTS', style: headerText),
       ),    
       const SizedBox(width: 50),
       GestureDetector(
@@ -31,7 +36,7 @@ Widget topBar({
       ),  
       const SizedBox(width: 50),
       GestureDetector(
-        onTap: () => pageSelectAction(2),
+        onTap: () => pageSelectAction(3),
         child:  Text('CONTACT', style: headerText),
       ),    
     ],

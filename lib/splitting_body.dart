@@ -3,6 +3,7 @@ import 'package:personal_site/widgets/about_me.dart';
 import 'package:personal_site/widgets/contact.dart';
 import 'package:personal_site/widgets/info_bar.dart';
 import 'package:personal_site/widgets/menu_bar.dart';
+import 'package:personal_site/widgets/projects.dart';
 import 'package:personal_site/widgets/skills.dart';
 import 'package:personal_site/widgets/skills_bar.dart';
 
@@ -94,32 +95,32 @@ class _SplittingBodyState extends State<SplittingBody> {
     var pages = [
       aboutMe(),
       skills(),
+      projects(),
       contact(),
     ];
 
     return AnimatedOpacity(
       opacity: (showBody) ? 1 : 0,
-      duration: const Duration(milliseconds: 1200),
+      duration: const Duration(milliseconds: 800),
       curve: Curves.easeIn,
       child: Container(
         padding: const EdgeInsets.all(20),
         margin: EdgeInsets.all(height * 0.05),
-        decoration: BoxDecoration(
-            color: Color.fromARGB(180, 0, 0, 0),
-            boxShadow: [
-              BoxShadow(
-                color: Color.fromARGB(140, 0, 0, 0),
-                offset: Offset.fromDirection(290, 6),
-                blurRadius: 10,
-              ),
-            ]),
+        decoration: const BoxDecoration(
+          color: Color.fromARGB(100, 0, 0, 0),
+          // boxShadow: [
+          //   BoxShadow(
+          //     color: Color.fromARGB(140, 0, 0, 0),
+          //     offset: Offset.fromDirection(290, 6),
+          //     blurRadius: 10,
+          //   ),
+          // ],
+        ),
         child: PageView.builder(
           controller: controller,
-          itemCount: 3,
+          itemCount: 4,
           itemBuilder: (context, i) {
-            return SingleChildScrollView(
-              child: pages[i]
-            );
+            return SingleChildScrollView(child: pages[i]);
           },
         ),
       ),

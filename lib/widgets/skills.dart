@@ -7,7 +7,7 @@ Widget skills() {
   return Container(
     padding: const EdgeInsets.all(50),
     child: Column(
-      crossAxisAlignment: CrossAxisAlignment.end,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text('Skills', style: titleTextStyle),
         Row(
@@ -16,30 +16,26 @@ Widget skills() {
           children: [
             Expanded(
                 child: Wrap(
-                  alignment: WrapAlignment.end,
+                  alignment: WrapAlignment.start,
               children: [
                 Text(
-                  'Hi - I\'m Carl, a UK-based software developer.',
+                  'This section will contain info about my skills and what I am learning... at some point...',
                   style: bodyTextStyle,
-                  textAlign: TextAlign.end,
                 ),
                 const SizedBox(height: 50),
                 Text(
-                  loremIpsum(words: 30),
+                  'The following text is currently lorem ipsum because I dont know what to write yet',
                   style: bodyTextStyle,
-                  textAlign: TextAlign.end,
                 ),
                 const SizedBox(height: 50),
                 Text(
                   loremIpsum(words: 10),
                   style: bodyTextStyle,
-                  textAlign: TextAlign.end,
                 ),
                 const SizedBox(height: 60),
                 Text(
                   loremIpsum(words: 30),
                   style: bodyTextStyle,
-                  textAlign: TextAlign.end,
                 )
               ],
             )),

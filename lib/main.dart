@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:personal_site/background_image.dart';
 import 'package:personal_site/opacity_filter.dart';
 import 'package:personal_site/splitting_body.dart';
+import 'package:personal_site/widgets/avatar.dart';
 
 void main() {
   runApp(const MainApp());
@@ -15,11 +16,15 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       home: Scaffold(
         body: Center(
-            child: Stack(children: [
-          BackgroundImage(),
-          OpacityFilter(),
-          SplittingBody(),
-        ])),
+          child: Stack(
+            children: [
+              BackgroundImage(),
+              OpacityFilter(),
+              SplittingBody(),
+              Avatar(),
+            ],
+          ),
+        ),
       ),
     );
   }

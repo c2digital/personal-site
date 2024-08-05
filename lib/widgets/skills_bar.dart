@@ -10,6 +10,7 @@
       height: 50,
       child: Row(
         children: [
+          SizedBox(width: 100),
           const Image(image: AssetImage('uk_flag.png'), height: 30),
           const SizedBox(width: 5),
           const Text('UK Based', style: skillsText),
